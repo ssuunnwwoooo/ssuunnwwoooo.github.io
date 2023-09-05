@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백선우 포트폴리오</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/jquery.fullpage.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.fullpage.min.js"></script>
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/custom.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_wrap">
+            <h1 class="logo"><a href="#">SUNWOO</a></h1>
+        </div>
+    </header>
+    <div class="menu_icon">
+        <img src="./images/menu.png" alt="메뉴버튼">
+    </div>
+    <nav class="gnb">
+        <ul>
+            <li class="mu01">
+                <a href="#intro">MAIN</a>
+            </li>
+            <li class="mu02">
+                <a href="#main_visual">PROJECT</a>
+            </li>
+            <li class="mu03"><a href="#main_Traning">TRANING</a></li>
+            <li class="mu04"><a href="#about">ABOUT ME</a></li>
+        </ul>
+    </nav>
+
+    <div class="noise"></div>
+
+    <main>
+        <section class="main">
+            <div class="intro section line">
+
+                <div class="gooey">
+                    <div class="itm01">
+                        <img src="./images/ball.png" alt="메인화면">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" stdDeviation="50" result="blur" />
+                                    <feColorMatrix in="blur" mode="matrix"
+                                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="goo" />
+                                    <feBlend in="SourceGraphic" in2="goo" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="txt">
+                    <h2>WELCOME
+                    </h2>
+                </div>
+                <div class="title">
+                    <h2>UX/UI Designer</h2>
+                    <p>디자인을 현실로, 웹을 현장으로</p>
+                    <p>디자인의 아름다움을 코드로 전달하다</p>
+                </div>
+            </div>
+            <div class="main_visual section line">
+                <div class="txt">
+                    <h2>PROJECT
+                    </h2>
+                </div>
+                <div class="swiper main_slide">
+                    <div class="swiper-wrapper">
+
+
+                        <div id="main01" class="swiper-slide">
+                            <div class="left_box">
+                            </div>
+                            <div class="center">
+                                <img src="./images/main01_pc.png" alt="고려대학교 안암병원">
+                            </div>
+                            <div class="right_box">
+                                <h3>고려대학교 안암병원</h3>
+                                <table class="list list_dot">
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">INFO</td>
+                                        <td>풀페이지를 사용하여 제작했습니다.
+                                            Swiper Slide를 이용하여 슬라이드를 만들었습니다.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">TYPE</td>
+                                        <td>반응형 웹사이트</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">TOOLS</td>
+                                        <td>HTML, CSS, Javascript(jQuery), figma, Swiper</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">FONT</td>
+                                        <td>Pretendard</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">COLOR</td>
+
+                                        <td>
+                                            <ul class="btn_box">
+                                                <li class="btn btn01"></li>
+                                                <li class="btn btn02"></li>
+                                                <li class="btn btn03"></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <ul class="more_btn">
+                                    <li><a href="https://ssuunnwwoooo.github.io/230807/" target="_blank">VIEW</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div id="main02" class="swiper-slide">
+                            <div class="left_box">
+                            </div>
+                            <div class="center">
+                                <img src="./images/main02_pc.png" alt="동서석유화학">
+                            </div>
+                            <div class="right_box">
+                                <h3>동서석유화학</h3>
+
+                                <table class="list list_dot">
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">INFO</td>
+                                        <td>Swiper Slide를 이용하여 슬라이드를 만들었습니다.Aos를 사용하여 마우스 스크롤 시 이벤트가 발생합니다.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">TYPE</td>
+                                        <td>반응형 웹사이트</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">TOOLS</td>
+                                        <td>HTML, CSS, Javascript(jQuery), figma, Swiper, AOS</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">FONT</td>
+                                        <td>Pretendard</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">COLOR</td>
+
+                                        <td>
+                                            <ul class="btn_box">
+                                                <li class="btn btn01"></li>
+                                                <li class="btn btn02"></li>
+                                                <li class="btn btn03"></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <ul class="more_btn">
+                                    <li><a href="https://ssuunnwwoooo.github.io/230731/" target="_blank">VIEW</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div id="main03" class="swiper-slide">
+                            <div class="left_box">
+                            </div>
+                            <div class="center">
+                                <img src="./images/main03_pc.png" alt="브릭캠퍼스">
+                            </div>
+                            <div class="right_box">
+                                <h3>브릭캠퍼스</h3>
+
+                                <table class="list list_dot">
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">INFO</td>
+                                        <td>풀페이지를 사용하여 기존의 사이트를 리디자인 하였습니다.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">TYPE</td>
+                                        <td>반응형 웹사이트</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">TOOLS</td>
+                                        <td>HTML, CSS, Javascript(jQuery)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">FONT</td>
+                                        <td>Pretendard, Sigmar, SBAggro</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">COLOR</td>
+
+                                        <td>
+                                            <ul class="btn_box">
+                                                <li class="btn btn01"></li>
+                                                <li class="btn btn02"></li>
+                                                <li class="btn btn03"></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <ul class="more_btn">
+                                    <li><a href="https://ssuunnwwoooo.github.io/brick/" target="_blank">VIEW</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div id="main04" class="swiper-slide">
+                            <div class="left_box">
+                            </div>
+                            <div class="center">
+                                <img src="./images/main04_pc.png" alt="위담한의원 부산점">
+                            </div>
+                            <div class="right_box">
+                                <h3>위담한의원 부산점</h3>
+
+                                <table class="list list_dot">
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">INFO</td>
+                                        <td>Swiper Slide를 이용하여 슬라이드를 만들었습니다.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">TYPE</td>
+                                        <td>반응형 웹사이트</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">TOOLS</td>
+                                        <td>HTML, CSS, Javascript(jQuery)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">FONT</td>
+                                        <td>Pretendard</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">COLOR</td>
+
+                                        <td>
+                                            <ul class="btn_box">
+                                                <li class="btn btn01"></li>
+                                                <li class="btn btn02"></li>
+                                                <li class="btn btn03"></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <ul class="more_btn">
+                                    <li><a href="https://ssuunnwwoooo.github.io/0717/" target="_blank">VIEW</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div id="main05" class="swiper-slide">
+                            <div class="left_box"></div>
+                            <div class="center">
+                                <img src="./images/main05_pc.png" alt="레드버튼 보드게임카페">
+                            </div>
+                            <div class="right_box">
+                                <h3>레드버튼 보드게임카페</h3>
+
+                                <table class="list list_dot">
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">INFO</td>
+                                        <td>Slick-Slide를 이용하여 슬라이드를 만들었습니다.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">TYPE</td>
+                                        <td>반응형 웹사이트</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">TOOLS</td>
+                                        <td>HTML, CSS, Javascript(jQuery), Slick-Slide</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">FONT</td>
+                                        <td>Pretendard</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">COLOR</td>
+
+                                        <td>
+                                            <ul class="btn_box">
+                                                <li class="btn btn01"></li>
+                                                <li class="btn btn02"></li>
+                                                <li class="btn btn03"></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <ul class="more_btn">
+                                    <li><a href="https://ssuunnwwoooo.github.io/bored/" target="_blank">VIEW</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div id="main06" class="swiper-slide">
+                            <div class="left_box"></div>
+                            <div class="center">
+                                <img src="./images/main06_pc.png" alt="선녀와 나무꾼 테마파크">
+                            </div>
+                            <div class="right_box">
+                                <h3>선녀와 나무꾼</h3>
+
+                                <table class="list list_dot">
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">INFO</td>
+                                        <td>Slick-Slide와 Swiper-Slide를 이용하여 슬라이드를 만들었습니다. 기존의 사이트를 리디자인 하였습니다.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">TYPE</td>
+                                        <td>반응형 웹사이트</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">TOOLS</td>
+                                        <td>HTML, CSS, Javascript(jQuery), Slick-Slide, Swiper-Slide</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">FONT</td>
+                                        <td>Roboto, Noto Sans KR</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">COLOR</td>
+
+                                        <td>
+                                            <ul class="btn_box">
+                                                <li class="btn btn01"></li>
+                                                <li class="btn btn02"></li>
+                                                <li class="btn btn03"></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <ul class="more_btn">
+                                    <li><a href="https://ssuunnwwoooo.github.io/namu/" target="_blank">VIEW</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="main_Traning section line">
+                <div class="txt">
+                    <h3>TRANING</h3>
+                </div>
+                <div class="traning_wrap inner">
+                    <div class="box box01">
+                        <a href="http://nusting.dothome.co.kr/" target="_blank"><img src="./images/tr01_pc.png"
+                                alt="깔끔이 청소 이미지"></a>
+                    </div>
+                    <div class="box box02">
+                        <a href="https://ssuunnwwoooo.github.io/responsive_web_casia/" target="_blank"><img
+                                src="./images/tr02_pc.png" alt="카시아속초 이미지"></a>
+                    </div>
+                    <div class="box box03">
+                        <a href="https://ssuunnwwoooo.github.io/responsive_web_outback/" target="_blank"><img
+                                src="./images/tr03_pc.png" alt="아웃백 스테이크 이미지"></a>
+                    </div>
+                    <div class="box box04">
+                        <a href="https://ssuunnwwoooo.github.io/responsive_web_dokdo/" target="_blank"><img
+                                src="./images/tr04_pc.png" alt="독도이미지"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="about section line">
+                <div class="about_wrap inner">
+                    <div class="txt">
+                        <h3>ABOUT ME
+                        </h3>
+                    </div>
+                    <div class="wrap">
+                        <div class="block">
+                            <svg width="100%" viewBox="0 0 334 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <mask id="photo-mask">
+                                        <path d></path>
+                                        <path d></path>
+                                    </mask>
+                                </defs>
+                                <image mask="url(#photo-mask)" xlink:href="./images/about_me.png" width="85%" />
+                            </svg>
+
+                            <div class="name_box">
+                                <h3> PROFILE
+                                </h3>
+                                <table>
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Name</td>
+                                        <td><span>백선우</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Birth</td>
+                                        <td>1999. 09. 13</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Phone</td>
+                                        <td>+82 0134396890</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Email</td>
+                                        <td>o3olia@naver.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Web site</td>
+                                        <td><a href="https://github.com/ssuunnwwoooo"
+                                                target="_blank">https://github.com/ssuunnwwoooo</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="exp_box">
+                            <h3>EXPERIENCES</h3>
+                            <table>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td class="strong">23 . 05 ~ 23 . 09</td>
+                                    <td>NCS 기반 스마트 UI/UX 웹퍼블리셔 교육 수료</td>
+                                </tr>
+                                <tr>
+                                    <td class="strong">22 . 02 ~ 23 . 02</td>
+                                    <td>롯데월드 부산에서 근무</td>
+                                </tr>
+                                <tr>
+                                    <td class="strong">21 . 09 ~ 21 . 12</td>
+                                    <td>카페 읍천리382에서 근무</td>
+                                </tr>
+                                <tr>
+                                    <td class="strong">20 . 05 ~ 21 . 06</td>
+                                    <td>와플 전문점 와플칸에서 근무</td>
+                                <tr>
+                                    <td class="strong">20 . 05 ~ 21 . 06</td>
+                                    <td>배스킨라빈스에서 근무</td>
+                                </tr>
+                                <tr>
+                                    <td class="strong">19 . 05 ~ 19 . 12</td>
+                                    <td>스파랜드 부산에서 근무</td>
+                                </tr>
+                                <tr>
+                                    <td class="strong">18 . 08 ~ 19 . 01</td>
+                                    <td>후라이드 참 잘하는 집에서 근무</td>
+                                </tr>
+                                <tr>
+                                    <td class="strong">17 . 07 ~ 18 . 07</td>
+                                    <td>(주)엠비씨플레이비 키자니아 부산에서 근무</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
