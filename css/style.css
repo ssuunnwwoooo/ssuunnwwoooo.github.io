@@ -538,9 +538,11 @@ body::after {
     font-size: 18px;
     font-weight: 700;
     color: var(--strong);
-    width: 80px;
 }
 
+.list_dot caption {
+    display: none;
+}
 
 .btn_box {
     display: flex;
@@ -1071,6 +1073,10 @@ body::after {
     position: relative;
 }
 
+.about caption {
+    display: none;
+}
+
 .about .txt {
     position: absolute;
     bottom: 15px;
@@ -1079,7 +1085,7 @@ body::after {
 }
 
 .about .txt h3 {
-    font-size: 60px;
+    font-size: 40px;
     color: var(--mc);
     letter-spacing: 2px;
 }
@@ -1125,10 +1131,6 @@ body::after {
     margin-bottom: 30px;
 }
 
-.name_box tr {
-    display: flex;
-}
-
 .name_box td {
     font-size: 18px;
     color: var(--oapcity02);
@@ -1143,7 +1145,6 @@ body::after {
 
 .name_box .strong {
     font-size: 20px;
-    width: 90px;
     color: var(--strong);
 }
 
@@ -1154,10 +1155,6 @@ body::after {
     margin-bottom: 30px;
 }
 
-.exp_box tr {
-    display: flex;
-}
-
 .exp_box td {
     font-size: 18px;
     color: var(--oapcity02);
@@ -1166,7 +1163,6 @@ body::after {
 
 .exp_box .strong {
     font-size: 18px;
-    width: 130px;
     color: var(--strong);
 }
 
