@@ -37,6 +37,25 @@
 </head>
 
 <body>
+
+    <div class="loading">
+        <div class="loading_wrap inner">
+            <div class="circle">
+                <img src="./images/ball.png" alt="메인 이미지">
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="oog">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7" />
+                </filter>
+            </defs>
+        </svg>
+    </div>
+
+
+
     <header class="header">
         <div class="header_wrap">
             <h1 class="logo"><a href="#">SUNWOO</a></h1>
@@ -85,8 +104,7 @@
                 </div>
                 <div class="title">
                     <h2>UX/UI Designer</h2>
-                    <p>디자인을 현실로, 웹을 현장으로</p>
-                    <p>디자인의 아름다움을 코드로 전달하다</p>
+                    <p>Welcome to my Portfolio !</p>
                 </div>
             </div>
             <div class="main_visual section line">
@@ -108,9 +126,9 @@
                                 <h3>고려대학교 안암병원</h3>
                                 <table class="list list_dot">
                                     <colgroup>
-                                        <col style="width: 80px;">
+                                        <col style="width: 100px;">
                                     </colgroup>
-                                    <caption>고려대안암병원</caption>
+                                    <caption class="blind">고려대안암병원</caption>
                                     <tbody>
                                         <tr>
                                             <td class="strong">INFO</td>
@@ -159,9 +177,9 @@
 
                                 <table class="list list_dot">
                                     <colgroup>
-                                        <col style="width: 80px;">
+                                        <col style="width: 100px;">
                                     </colgroup>
-                                    <caption>동서석유화학</caption>
+                                    <caption class="blind">동서석유화학</caption>
                                     <tbody>
                                         <tr>
                                             <td class="strong">INFO</td>
@@ -209,9 +227,9 @@
 
                                 <table class="list list_dot">
                                     <colgroup>
-                                        <col style="width: 80px;">
+                                        <col style="width: 100px;">
                                     </colgroup>
-                                    <caption>브릭캠퍼스</caption>
+                                    <caption class="blind">브릭캠퍼스</caption>
 
                                     <tbody>
                                         <tr>
@@ -260,9 +278,9 @@
 
                                 <table class="list list_dot">
                                     <colgroup>
-                                        <col style="width: 80px;">
+                                        <col style="width: 100px;">
                                     </colgroup>
-                                    <caption>위담한의원 부산점</caption>
+                                    <caption class="blind">위담한의원 부산점</caption>
 
                                     <tbody>
                                         <tr>
@@ -310,9 +328,9 @@
 
                                 <table class="list list_dot">
                                     <colgroup>
-                                        <col style="width: 80px;">
+                                        <col style="width: 100px;">
                                     </colgroup>
-                                    <caption>레드버튼 보드게임카페</caption>
+                                    <caption class="blind">레드버튼 보드게임카페</caption>
 
                                     <tbody>
                                         <tr>
@@ -361,9 +379,9 @@
 
                                 <table class="list list_dot">
                                     <colgroup>
-                                        <col style="width: 80px;">
+                                        <col style="width: 100px;">
                                     </colgroup>
-                                    <caption>선녀와 나무꾼</caption>
+                                    <caption class="blind">선녀와 나무꾼</caption>
 
                                     <tbody>
                                         <tr>
@@ -415,18 +433,31 @@
                     <div class="box box01">
                         <a href="http://nusting.dothome.co.kr/" target="_blank"><img src="./images/tr01_pc.png"
                                 alt="깔끔이 청소 이미지"></a>
+                        <div class="tt">
+                            <p>그누보드, 상세페이지, PHP</p>
+                        </div>
                     </div>
                     <div class="box box02">
-                        <a href="https://ssuunnwwoooo.github.io/responsive_web_casia/" target="_blank"><img
-                                src="./images/tr02_pc.png" alt="카시아속초 이미지"></a>
+                        <a href="https://ssuunnwwoooo.github.io/responsive_web_dokdo/" target="_blank"><img
+                                src="./images/tr04_pc.png" alt="독도이미지"></a>
+                        <div class="tt">
+                            <p>기본 반응형</p>
+                        </div>
+
                     </div>
                     <div class="box box03">
                         <a href="https://ssuunnwwoooo.github.io/responsive_web_outback/" target="_blank"><img
                                 src="./images/tr03_pc.png" alt="아웃백 스테이크 이미지"></a>
+                        <div class="tt">
+                            <p>기본 반응형</p>
+                        </div>
                     </div>
                     <div class="box box04">
-                        <a href="https://ssuunnwwoooo.github.io/responsive_web_dokdo/" target="_blank"><img
-                                src="./images/tr04_pc.png" alt="독도이미지"></a>
+                        <a href="https://ssuunnwwoooo.github.io/responsive_web_casia/" target="_blank"><img
+                                src="./images/tr02_pc.png" alt="카시아속초 이미지"></a>
+                        <div class="tt">
+                            <p>기본 반응형</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -453,9 +484,9 @@
                                 </h3>
                                 <table>
                                     <colgroup>
-                                        <col style="width: 90px;">
+                                        <col style="width: 130px;">
                                     </colgroup>
-                                    <caption>PROFILE</caption>
+                                    <caption class="blind">PROFILE</caption>
 
                                     <tbody>
                                         <tr>
@@ -489,7 +520,7 @@
                                 <colgroup>
                                     <col style="width: 130px;">
                                 </colgroup>
-                                <caption>EXPERIENCES</caption>
+                                <caption class="blind">EXPERIENCES</caption>
                                 <tbody>
                                     <tr>
                                         <td class="strong">23.05 ~ 23.09</td>

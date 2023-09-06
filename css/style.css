@@ -61,7 +61,7 @@ body::after {
 
 .noise {
     position: fixed;
-    z-index: 9999;
+    z-index: 99999;
     top: -300%;
     left: -150%;
     height: 600%;
@@ -117,6 +117,135 @@ body::after {
         transform: translate(-10%, 10%);
     }
 }
+
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--mk);
+    z-index: 10000;
+    animation: load 3s 2.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes load {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.loading .loading_wrap {
+    position: relative;
+    height: 100vh;
+    filter: url('#oog');
+}
+
+
+.loading .circle {
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    animation: cir 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cir {
+    0% {
+        transform: translateX(500%) rotate(380deg);
+    }
+
+    50% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    60% {
+        transform: scale(0.8) rotate(0deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+
+}
+
+.loading .circle img {
+    width: 200px;
+    height: 200px;
+}
+
+.circle::before,
+.circle::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    opacity: 1;
+
+}
+
+.circle::before {
+    top: 0;
+    left: 0;
+    background: #f59e8e;
+
+    animation: one01 3s infinite;
+}
+
+.circle::after {
+    top: 0;
+    right: 0;
+    background: var(--mc);
+    animation: one02 3s infinite;
+}
+
+@keyframes one01 {
+    0% {
+        opacity: 0;
+    }
+
+    79% {
+        opacity: 0;
+    }
+
+    80% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-230%, 110%);
+    }
+}
+
+@keyframes one02 {
+
+    0% {
+        opacity: 0;
+    }
+
+    79% {
+        opacity: 0;
+    }
+
+    80% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(230%, -110%);
+    }
+}
+
+/* --------------------- */
 
 .section {
     height: 100vh;
@@ -540,9 +669,6 @@ body::after {
     color: var(--strong);
 }
 
-.list_dot caption {
-    display: none;
-}
 
 .btn_box {
     display: flex;
@@ -845,7 +971,8 @@ body::after {
 
 .swiper-button-next {
     position: absolute;
-    bottom: 0;
+    top: auto;
+    bottom: 13%;
     left: 50%;
     width: 80px;
     height: 80px;
@@ -854,7 +981,6 @@ body::after {
     border-radius: 50%;
     margin: 0;
     z-index: 10;
-    transform: translateY(330%);
     transition: 0.3s;
 }
 
@@ -962,7 +1088,7 @@ body::after {
     content: "";
     position: absolute;
     top: 32%;
-    right: 9%;
+    right: 10%;
     width: 100px;
     height: 50px;
     background: var(--main04);
@@ -999,7 +1125,7 @@ body::after {
 }
 
 .traning_wrap .box02::after {
-    content: "카시아속초";
+    content: "독도전시관";
     position: absolute;
     font-size: 17px;
     line-height: 50px;
@@ -1021,8 +1147,8 @@ body::after {
 .traning_wrap .box03::after {
     content: "아웃백 스테이크";
     position: absolute;
-    right: 6%;
     width: 130px;
+    right: 6.5%;
     font-size: 17px;
     line-height: 50px;
     font-weight: 700;
@@ -1041,16 +1167,19 @@ body::after {
 }
 
 .traning_wrap .box04::after {
-    content: "독도 전시관";
+    content: "카시아속초";
     position: absolute;
-    right: 6%;
-    width: 130px;
     font-size: 17px;
     line-height: 50px;
     font-weight: 700;
     color: var(--mk);
     background: #596b8d;
     border-radius: 15px;
+}
+
+.traning_wrap .tt p {
+    font-size: 18px;
+    color: var(--hp);
 }
 
 /* ---------------------------------- */
@@ -1071,10 +1200,6 @@ body::after {
 
 .about {
     position: relative;
-}
-
-.about caption {
-    display: none;
 }
 
 .about .txt {
@@ -1479,23 +1604,24 @@ body::after {
     }
 
     /*  */
-
-    .swiper-button-next {
-        /* r */
-        left: 75%;
-        transform: translateY(400%);
-        width: 50px;
-        height: 50px;
-    }
-
-
     .swiper-button-prev {
         /* r */
-        top: 80%;
+        top: auto;
+        bottom: 15%;
         left: 55%;
         width: 50px;
         height: 50px;
     }
+
+    .swiper-button-next {
+        /* r */
+        bottom: 15%;
+        left: 75%;
+        width: 50px;
+        height: 50px;
+    }
+
+
 
     /* ---------------------------------- */
     .main_Traning {
@@ -1508,95 +1634,31 @@ body::after {
         /* r */
         display: flex;
         flex-direction: column;
-        gap: 0;
+        gap: 10px;
         background: none;
     }
 
     .traning_wrap .box::before {
         /* r */
-        opacity: 1;
-        top: 0;
-        right: 0;
-        width: 80px;
-        height: 40px;
-        border-radius: 5px;
-    }
-
-    .traning_wrap .box01::before {
-        /* r */
-        font-size: 15px;
-        line-height: 40px;
+        display: none;
     }
 
     .traning_wrap .box::after {
         /* r */
-        opacity: 1;
-        top: 33%;
-        right: 0;
-        width: 80px;
-        height: 40px;
-        border-radius: 5px;
+        display: none;
     }
 
-    .traning_wrap .box01::after {
-        /* r */
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 40px;
-    }
-
-    .traning_wrap .box02::before {
-        /* r */
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 40px;
-
-    }
-
-    .traning_wrap .box02::after {
-        /* r */
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 40px;
-    }
-
-    .traning_wrap .box03::before {
-        /* r */
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 40px;
-    }
-
-    .traning_wrap .box03::after {
-        /* r */
-        right: 0;
-        width: 100px;
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 40px;
-    }
-
-    .traning_wrap .box04::before {
-        /* r */
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 40px;
-    }
-
-    .traning_wrap .box04::after {
-        /* r */
-        right: 0;
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 40px;
-    }
 
     /* ---------------------------------- */
 
     .traning_wrap .box img {
         /* r */
-        width: 250px;
+        width: 200px;
         margin-bottom: 5px;
+    }
+
+    .traning_wrap .tt p {
+        font-size: 15px;
     }
 
     /* ---------------------------------- */
