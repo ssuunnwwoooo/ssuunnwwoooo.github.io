@@ -1154,6 +1154,21 @@ body::after {
     margin-bottom: 30px;
 }
 
+.exp_box tr {
+    display: flex;
+}
+
+.exp_box td {
+    font-size: 18px;
+    color: var(--oapcity02);
+    padding: 8px 0;
+}
+
+.exp_box .strong {
+    font-size: 18px;
+    width: 130px;
+    color: var(--strong);
+}
 
 @keyframes svgani {
     0% {
