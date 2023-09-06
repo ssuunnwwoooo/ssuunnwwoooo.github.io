@@ -1086,7 +1086,7 @@ body::after {
 
 .about .wrap {
     display: flex;
-    gap: 30px;
+    gap: 100px;
     justify-content: center;
 }
 
@@ -1574,6 +1574,7 @@ body::after {
     .traning_wrap .box03::after {
         /* r */
         right: 0;
+        width: 100px;
         font-size: 15px;
         font-weight: 500;
         line-height: 40px;
@@ -1598,134 +1599,110 @@ body::after {
 
     .traning_wrap .box img {
         /* r */
-        width: 230px;
+        width: 250px;
         margin-bottom: 5px;
     }
 
     /* ---------------------------------- */
 
-    .about {
-        position: relative;
-    }
 
     .about .txt {
-        position: absolute;
-        bottom: 15px;
-        margin-left: 20px;
-        font-family: 'Poller One';
+        /* r */
+        bottom: 20px;
+        margin-left: 145px;
     }
 
     .about .txt h3 {
-        font-size: 60px;
-        color: var(--mc);
-        letter-spacing: 2px;
+        /* r */
+        font-size: 28px;
     }
 
-    .about .block {
-        display: flex;
+    .about .wrap {
+        /* r */
         gap: 30px;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
     }
 
     .about svg {
-        width: 25%;
-        transition: 0.5s;
+        /* r */
+        display: none;
     }
 
 
-    .about svg:hover {
-        transform: scale(1.2);
+    .name_box h3 {
+        /* r */
+        font-size: 25px;
+        margin-bottom: 15px;
     }
 
-    .about path {
-        fill: #fff;
-        transform: scale(0.9);
-        opacity: 1;
-        animation: svgani 4.5s infinite
+    .name_box td {
+        /* r */
+        font-size: 15px;
+        padding: 5px 0;
     }
 
-    .about path:nth-child(2) {
-        transform: scale(1);
-        opacity: 0.5;
-    }
-
-
-    .about .txt_box {
-        display: flex;
-        gap: 100px;
-        align-items: center;
-        color: var(--oapcity02)
-    }
-
-    .about .txt_box li {
-        padding: 6px 0;
-    }
-
-    .about .txt_box strong {
-        width: 155px;
+    .name_box td span {
+        /* r */
         font-size: 18px;
-        font-weight: 500;
-        color: var(--strong);
     }
 
-    .about .txt_box .name_box {
-        margin-bottom: 40px;
+    .name_box .strong {
+        /* r */
+        font-size: 18px;
     }
 
-    .about .txt_box .name_box li {
-        display: flex;
+    .exp_box h3 {
+        /* r */
+        font-size: 25px;
+        margin-bottom: 15px;
     }
 
-    .about .txt_box .name_box span {
-        font-size: 28px;
-        font-weight: 700;
-        color: var(--strong);
+    .exp_box td {
+        /* r */
+        font-size: 15px;
+        padding: 5px 0;
     }
 
-    .about .txt_box .exp_box ul>li {
-        display: flex;
-    }
-
-    .about .txt_box .exp_box strong {
-        margin-right: 15px;
-        color: #615c57;
-    }
-
-    .about .txt_box p {
-        font-size: 17px;
-        color: var(--opacity02);
-    }
-
-    .about .txt_box h3 {
-        font-size: 35px;
-        font-weight: 700;
-        margin-bottom: 60px;
-        color: var(--mc);
-    }
-
-    .about .exp_box h3 {
-        font-size: 35px;
-        font-weight: 700;
-        margin-bottom: 20px;
-        color: var(--mc);
+    .exp_box .strong {
+        /* r */
+        width: 120px;
+        font-size: 16px;
     }
 
 
 
+    /* ------------------------------------------------ */
 
-    @keyframes svgani {
-        0% {
-            d: path("M300 150C300 232.843 232.843 300 150 300C67.1573 300 0 232.843 0 150C0 67.1573 67.1573 0 150 0C180.592 131.743 300 67.1573 300 150Z");
-        }
-
-        50% {
-            d: path("M300 159.184C300 236.954 232.843 300 150 300C67.1573 300 0 236.954 0 159.184C0 81.413 67.1573 0 150 0C232.843 0 300 81.413 300 159.184Z");
-        }
-
-        100% {
-            d: path("M300 150C300 232.843 232.843 300 150 300C67.1573 300 0 232.843 0 150C0 67.1573 67.1573 0 150 0C180.592 131.743 300 67.1573 300 150Z");
-        }
+    #fp-nav ul li,
+    .fp-slidesNav ul li {
+        /* r */
+        margin: 20px;
     }
+
+    #fp-nav ul li a.active span,
+    #fp-nav ul li:hover a.active span,
+    .fp-slidesNav ul li a.active span,
+    .fp-slidesNav ul li:hover a.active span {
+        /* r */
+        height: 13px;
+        width: 13px;
+    }
+
+    #fp-nav ul li a span,
+    .fp-slidesNav ul li a span {
+        /* r */
+        left: 200%;
+        height: 13px;
+        width: 13px;
+    }
+
+    #fp-nav ul li:hover a span,
+    .fp-slidesNav ul li:hover a span {
+
+        /*  */
+        height: 13px;
+        width: 13px;
+    }
+
 
 }
