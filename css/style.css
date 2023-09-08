@@ -129,6 +129,8 @@ body::after {
     z-index: 10000;
     animation: load 3s 2.5s;
     animation-fill-mode: forwards;
+    /* r */
+    display: none;
 }
 
 @keyframes load {
@@ -1777,6 +1779,7 @@ body::after {
 
 
     /*  */
+
     .swiper-button-prev {
         /* r */
         top: auto;
@@ -1795,6 +1798,28 @@ body::after {
     }
 
 
+    .swiper-button-next::before {
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        left: 10px;
+        width: 50px;
+        height: 50px;
+        background: url(../images/cursors.png) no-repeat center center/cover;
+        animation: cursor 2.5s infinite;
+    }
+
+    @keyframes cursor {
+        0% {
+            opacity: 0;
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-10%);
+            opacity: 0.5;
+        }
+    }
 
     /* ---------------------------------- */
     .main_Traning {
