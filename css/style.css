@@ -16,6 +16,9 @@
     --main04: #61648C;
     --main05: #B22016;
     --main06: #6CA097;
+    --main07: #2C5BA9;
+    --main08: #21819E;
+    --main09: #F4AEAD;
 }
 
 
@@ -969,6 +972,141 @@ body::after {
 
 /*  */
 
+#main07 {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#main07 .left_box {
+    background: var(--main07);
+}
+
+#main07 .center {
+    position: relative;
+}
+
+#main07 .center::before {
+    position: absolute;
+    content: "";
+    bottom: -30px;
+    right: -20px;
+    width: 150px;
+    height: 300px;
+    background: url(../images/main07--m.png)no-repeat top center/cover;
+    border-radius: 18px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+#main07 .btn_box .btn01 {
+    background: var(--main07);
+}
+
+#main07 .btn_box .btn02 {
+    background: #E80B8C;
+}
+
+#main07 .btn_box .btn03 {
+    background: #10203A;
+}
+
+#main07 .right_box h3::before {
+    background: var(--main07);
+}
+
+
+/*  */
+
+#main08 {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#main08 .left_box {
+    background: var(--main08);
+}
+
+#main08 .center {
+    position: relative;
+}
+
+#main08 .center::before {
+    position: absolute;
+    content: "";
+    bottom: -30px;
+    right: -20px;
+    width: 150px;
+    height: 300px;
+    background: url(../images/main08--m.png)no-repeat top center/cover;
+    border-radius: 18px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+#main08 .btn_box .btn01 {
+    background: var(--main08);
+}
+
+#main08 .btn_box .btn02 {
+    background: #73B0BA;
+}
+
+#main08 .btn_box .btn03 {
+    background: #EAEAE8;
+}
+
+#main08 .right_box h3::before {
+    background: var(--main08);
+}
+
+
+/*  */
+
+
+#main09 {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#main09 .left_box {
+    background: var(--main09);
+}
+
+#main09 .center {
+    position: relative;
+}
+
+#main09 .center::before {
+    position: absolute;
+    content: "";
+    bottom: -30px;
+    right: -20px;
+    width: 150px;
+    height: 300px;
+    background: url(../images/main09--m.png)no-repeat top center/cover;
+    border-radius: 18px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+#main09 .btn_box .btn01 {
+    background: var(--main09);
+}
+
+#main09 .btn_box .btn02 {
+    background: #81676E;
+}
+
+#main09 .btn_box .btn03 {
+    background: #FF4B6B;
+}
+
+#main09 .right_box h3::before {
+    background: var(--main09);
+}
+
+
+/*  */
 .swiper-button-next {
     position: absolute;
     top: auto;
@@ -1338,6 +1476,13 @@ body::after {
 
 
 @media (max-width:768px) {
+    .loading .circle {
+        /* r */
+        top: 38%;
+        left: 25%;
+    }
+
+
     .line::before {
         /* r */
         bottom: 70px;
@@ -1603,6 +1748,34 @@ body::after {
         box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
     }
 
+    #main07 .center::before {
+        /* r */
+        bottom: -10px;
+        right: 0;
+        width: 90px;
+        height: 150px;
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    #main08 .center::before {
+        /* r */
+        bottom: -10px;
+        right: 0;
+        width: 90px;
+        height: 150px;
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    #main09 .center::before {
+        /* r */
+        bottom: -10px;
+        right: 0;
+        width: 90px;
+        height: 150px;
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+    }
+
+
     /*  */
     .swiper-button-prev {
         /* r */
@@ -1735,6 +1908,7 @@ body::after {
     .fp-slidesNav ul li {
         /* r */
         margin: 20px;
+        display: none;
     }
 
     #fp-nav ul li a.active span,

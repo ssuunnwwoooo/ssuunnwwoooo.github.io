@@ -11,7 +11,7 @@ function parallax(e) {
 }
 
 
-const colors = ['#A73B59', '#97AF8F', '#A63232', '#61648C', '#B22016', '#6CA097'];
+const colors = ['#A73B59', '#97AF8F', '#A63232', '#61648C', '#B22016', '#6CA097', '#2C5BA9', '#21819E', '#F4AEAD'];
 const H1A = document.querySelector('h1 a');
 
 const mainslide = new Swiper('.main_slide', {
