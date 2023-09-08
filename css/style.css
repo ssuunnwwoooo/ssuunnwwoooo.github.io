@@ -674,6 +674,10 @@ body::after {
     color: var(--strong);
 }
 
+.list_dot span {
+    font-weight: 700;
+    font-size: 19px;
+}
 
 .btn_box {
     display: flex;
@@ -694,7 +698,7 @@ body::after {
 
 .more_btn>li {
     color: var(--oapcity02);
-    font-size: 18px;
+    font-size: 23px;
     padding: 10px 20px;
     border-radius: 15px;
     border: 1px solid var(--oapcity02);
@@ -1676,6 +1680,10 @@ body::after {
         font-size: 16px;
     }
 
+    .list_dot span {
+        font-size: 17px;
+    }
+
     .btn_box .btn {
         /* r */
         width: 18px;
@@ -1784,7 +1792,7 @@ body::after {
         /* r */
         top: auto;
         bottom: 15%;
-        left: 55%;
+        left: 60%;
         width: 50px;
         height: 50px;
     }
@@ -1792,7 +1800,7 @@ body::after {
     .swiper-button-next {
         /* r */
         bottom: 15%;
-        left: 75%;
+        left: 80%;
         width: 50px;
         height: 50px;
     }
