@@ -1068,7 +1068,7 @@ body::after {
 
 /*  */
 
-
+/* 
 #main09 {
     position: relative;
     height: 100vh;
@@ -1109,7 +1109,7 @@ body::after {
 
 #main09 .right_box h3::before {
     background: var(--main09);
-}
+} */
 
 
 /*  */
@@ -1776,15 +1776,16 @@ body::after {
         box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
     }
 
-    #main09 .center::before {
+    /*  #main09 .center::before {
         /* r */
+    /* 
         bottom: -10px;
         right: 0;
         width: 90px;
         height: 150px;
         box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
     }
-
+ */
 
     /*  */
 
