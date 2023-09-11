@@ -129,8 +129,6 @@ body::after {
     z-index: 10000;
     animation: load 3s 2.5s;
     animation-fill-mode: forwards;
-    /* r */
-    display: none;
 }
 
 @keyframes load {
