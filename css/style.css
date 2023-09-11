@@ -129,6 +129,8 @@ body::after {
     z-index: 10000;
     animation: load 3s 2.5s;
     animation-fill-mode: forwards;
+    /* r */
+    display: none;
 }
 
 @keyframes load {
@@ -1690,7 +1692,8 @@ body::after {
 
     .more_btn {
         display: flex;
-        gap: 30px;
+        gap: 10px;
+
     }
 
     .more_btn>li {
@@ -1698,6 +1701,10 @@ body::after {
         font-size: 16px;
         padding: 5px 15px;
         border-radius: 5px;
+    }
+
+    .more_btn .ori {
+        display: none;
     }
 
     /*  */
