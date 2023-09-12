@@ -129,6 +129,8 @@ body::after {
     z-index: 10000;
     animation: load 3s 2.5s;
     animation-fill-mode: forwards;
+    /* r */
+    display: none;
 }
 
 @keyframes load {
@@ -1342,11 +1344,12 @@ body::after {
 
 .about {
     position: relative;
+
 }
 
 .about .txt {
     position: absolute;
-    bottom: 15px;
+    bottom: 15px 15px;
     margin-left: 20px;
     font-family: 'Poller One';
 }
@@ -1361,6 +1364,8 @@ body::after {
     display: flex;
     gap: 100px;
     justify-content: center;
+    align-items: center;
+
 }
 
 .about .block {
@@ -1390,12 +1395,11 @@ body::after {
     opacity: 0.5;
 }
 
-
 .name_box h3 {
     font-size: 30px;
     font-weight: 500;
     color: var(--main02);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .name_box td {
@@ -1415,11 +1419,12 @@ body::after {
     color: var(--strong);
 }
 
+
 .exp_box h3 {
     font-size: 30px;
     font-weight: 500;
     color: var(--main02);
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .exp_box td {
