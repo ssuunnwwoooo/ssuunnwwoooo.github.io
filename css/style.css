@@ -1340,6 +1340,102 @@ body::after {
 
 /* ---------------------------------- */
 
+.main_Design {
+    position: relative;
+    align-items: center;
+}
+
+.main_Design img {
+    max-height: 350px;
+    max-width: 350px;
+}
+
+.Design_wrap {
+    position: relative;
+}
+
+.Design_wrap .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+.Design_wrap .swiper-slide .txt_box {
+    text-transform: uppercase;
+    color: var(--hp);
+    font-size: 20px;
+    opacity: 0;
+}
+
+.Design_wrap .swiper-slide .txt_box .strong {
+    color: var(--strong);
+    font-weight: 700;
+}
+
+.Design_wrap .swiper-slide .img_box {}
+
+.Design_wrap .swiper-slide-active .img_box {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.Design_wrap .swiper-slide-active .txt_box {
+    opacity: 1;
+    transform: translateY(100%);
+}
+
+.Design_wrap .swiper-slide-active .txt_box td {
+    text-align: left;
+}
+
+/* ---------------------------------- */
+
+.main_Design .arrows {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    width: 100%;
+}
+
+.main_Design .arrows i {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    font-size: 40px;
+    color: rgba(158, 153, 147, 0.3);
+}
+
+.main_Design .arrows i::before {
+
+    padding: 15px;
+    border-radius: 50%;
+    border: 1px solid rgba(158, 153, 147, 0.3);
+    transition: 0.2s;
+}
+
+.main_Design .arrows i:hover {
+    color: rgba(110, 100, 89, 0.5);
+}
+
+.main_Design .arrows i:hover::before {
+    border: 1px solid rgba(110, 100, 89, 0.5);
+}
+
+.main_Design .arrows .left {
+    left: 15px;
+}
+
+.main_Design .arrows .right {
+    right: 15px;
+}
+
+/* ---------------------------------- */
+
 .about {
     position: relative;
 
@@ -1875,7 +1971,123 @@ body::after {
     }
 
     /* ---------------------------------- */
+    .main_Design {
+        position: relative;
+        align-items: center;
+    }
 
+    .main_Design h3 {
+        margin-left: -160px;
+        white-space: nowrap;
+    }
+
+    .main_Design img {
+        max-height: 350px;
+        max-width: 350px;
+        /* r */
+        max-width: 250px;
+        max-width: 250px;
+    }
+
+    .Design_wrap {
+        position: relative;
+    }
+
+    .Design_wrap .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        padding: 100px 0;
+        /* r */
+    }
+
+    .Design_wrap .swiper-slide .txt_box {
+        text-transform: uppercase;
+        color: var(--hp);
+        font-size: 20px;
+        opacity: 0;
+        /* r */
+        font-size: 16px;
+    }
+
+    .Design_wrap .swiper-slide .txt_box .strong {
+        color: var(--strong);
+        font-weight: 700;
+    }
+
+    .Design_wrap .swiper-slide .img_box {}
+
+    .Design_wrap .swiper-slide-active .img_box {
+        transform: scale(1.5);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+    .Design_wrap .swiper-slide-active .txt_box {
+        opacity: 1;
+        transform: translateY(100%);
+    }
+
+    .Design_wrap .swiper-slide-active .txt_box td {
+        text-align: left;
+    }
+
+    /* ---------------------------------- */
+
+    .main_Design .arrows {
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        z-index: 999;
+        transform: translate(-50%, -50%);
+        max-width: 800px;
+        width: 100%;
+        /* r */
+        bottom: 40%;
+    }
+
+    .main_Design .arrows i {
+        position: absolute;
+        top: 0;
+        cursor: pointer;
+        font-size: 40px;
+        color: rgba(158, 153, 147, 0.3);
+        /* r */
+        font-size: 25px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .main_Design .arrows i::before {
+        padding: 15px;
+        border-radius: 50%;
+        border: 1px solid rgba(158, 153, 147, 0.3);
+        transition: 0.2s;
+        /* r */
+        border: none;
+        background: rgba(0, 0, 0, 0.267);
+    }
+
+    .main_Design .arrows i:hover {
+        color: rgba(110, 100, 89, 0.5);
+        /* r */
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .main_Design .arrows i:hover::before {
+        border: 1px solid rgba(110, 100, 89, 0.5);
+        /* r */
+        border: none;
+    }
+
+    .main_Design .arrows .left {
+        left: 15px;
+    }
+
+    .main_Design .arrows .right {
+        right: 15px;
+    }
+
+    /* ---------------------------------- */
 
     .about .txt {
         /* r */

@@ -67,4 +67,27 @@ $('.gnb a').on('click', function () {
 })
 
 
+const designSlide = new Swiper('.Design_slide', {
+    centeredSlides: true,
+    loop: true,
+    parallax: true,
+    roundLengths: true,
+    slidesPerView: 1,
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+        },
 
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+
+});
+
+$('.main_Design .arrows .left').on('click', function () {
+    designSlide.slidePrev();
+});
+$('.main_Design .arrows .right').on('click', function () {
+    designSlide.slideNext();
+});
