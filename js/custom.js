@@ -39,7 +39,7 @@ const mainslide = new Swiper('.main_slide', {
 })
 
 $('.main').fullpage({
-    anchors: ['intro', 'main_visual', 'main_Traning', 'about'],
+    anchors: ['intro', 'main_visual', 'main_Traning', 'main_Design', 'about'],
     css3: false,
     navigation: true,
     afterRender: function () {
