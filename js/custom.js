@@ -1,14 +1,3 @@
-document.addEventListener("mousemove", parallax);
-function parallax(e) {
-    this.querySelectorAll('.layer').forEach(layer => {
-        const speed = layer.getAttribute('data-speed');
-
-        const x = (window.innerWidth - e.pageX * speed) / 100;
-        const y = (window.innerHeight - e.pageY * speed) / 100;
-
-        layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
-    })
-}
 
 
 const colors = ['#A73B59', '#97AF8F', '#A63232', '#61648C', '#B22016', '#6CA097', '#2C5BA9', '#21819E', '#F4AEAD'];
@@ -26,6 +15,10 @@ const mainslide = new Swiper('.main_slide', {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar", 
+      },
 
     slideActiveClass: 'on',
 
@@ -50,6 +43,16 @@ $('.main').fullpage({
         $('.main .section').eq(idx - 1).addClass('on').siblings().removeClass('on');
     },
 })
+
+
+    $('.tabcontent > div').hide();
+    $('.tabnav a').click(function () {
+      $('.tabcontent > div').hide().filter(this.hash).fadeIn();
+      $('.tabnav a').removeClass('active');
+      $(this).addClass('active');
+      return false;
+    }).filter(':eq(0)').click();
+    
 
 $('.menu_icon').on('click', function () {
     $(this).toggleClass('on');

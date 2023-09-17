@@ -1178,6 +1178,34 @@ body::after {
     content: '\F285'
 }
 
+.swiper-pagination-progressbar {
+    background: rgba(255, 255, 255, 0.103);
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #dfc1a1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transform-origin: left top;
+}
+
+.swiper-horizontal>.swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal,
+.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+.swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    width: 100%;
+    height: var(--swiper-pagination-progressbar-size, 4px);
+    left: 0;
+    top:9.9%;
+}
+
+
+
+
 /* ---------------------------------- */
 .main_Traning {
     position: relative;
@@ -1192,160 +1220,104 @@ body::after {
     color: var(--mc);
 }
 
-.traning_wrap {
-    position: relative;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: url(../images/ball.png)no-repeat center center/contain;
+.tab{
 }
 
-
-.traning_wrap .box {
-    position: relative;
-    z-index: 5;
+.tabnav{
 }
 
-.traning_wrap .box::before {
-    content: "";
-    position: absolute;
-    top: 30px;
-    right: 10%;
-    width: 100px;
-    height: 50px;
-    background: var(--main01);
-    border-radius: 15px;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
-
-    opacity: 0;
-    transition: 0.3s;
+.tabnav li{
+    display: inline-block;  
+    text-align: center; 
+    border-right: 1px solid #d3d3d3;
 }
 
-.traning_wrap .box:hover::before {
-    opacity: 1;
+.tabnav li a:before{
+    content:""; 
+    position:absolute; 
+    left:0; 
+    top:0px; 
+    width:100%; 
+    height:100%; 
+    background:rgba(56, 47, 47, 0.2);
 }
 
-.traning_wrap .box01::before {
-    content: "Gnuboard";
-    font-size: 18px;
-    line-height: 50px;
-    font-weight: 800;
-    color: var(--mk);
-    background: var(--main02);
+.tabnav li a.active:before{
+background: none;
+}
+.tabnav li a:hover::before{
+background: none;
 }
 
-.traning_wrap .box::after {
-    content: "";
-    position: absolute;
-    top: 32%;
-    right: 10%;
-    width: 100px;
-    height: 50px;
-    background: var(--main04);
-    border-radius: 15px;
-    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
-
-    opacity: 0;
-    transition: 0.3s 0.1s;
+.tabnav li a.active{
+  border: none;
 }
 
-.traning_wrap .box:hover::after {
-    opacity: 1;
+.tabnav li a{ 
+    position:relative; 
+    display:block; 
+    color: var(--hp); 
+    padding:0 30px; 
+    line-height:50px; 
+    font-size:18px;
 }
 
-.traning_wrap .box01::after {
-    content: "깔끔이 청소";
-    position: absolute;
-    font-size: 17px;
-    line-height: 50px;
-    font-weight: 700;
-    color: #664b33;
-    background: #DCBA94;
-    border-radius: 15px;
+.tabnav li a:hover,
+.tabnav li a.active{
+    color:var(--mk);
+    font-weight: 500;
+    border-bottom: none;
 }
 
-.traning_wrap .box02::before {
-    content: "반응형";
-    font-size: 18px;
-    line-height: 50px;
-    font-weight: 800;
-    color: var(--mk);
-    background: #7d97af;
-
+.tabnav .name01 {
+    background: #e0b7ab;
+}
+.tabnav .name02 {
+    background: #e0c19f;
+}
+.tabnav .name03 {
+    background: #C6CBA6;
+}
+.tabnav .name04 {
+    background: #8ca387;
+}
+.tabnav .name05 {
+    background: #87a39f;
 }
 
-.traning_wrap .box02::after {
-    content: "독도전시관";
-    position: absolute;
-    font-size: 17px;
-    line-height: 50px;
-    font-weight: 700;
-    color: var(--mk);
-    background: var(--main04);
-    border-radius: 15px;
+.tabcontent{
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+    background: #f2f2f2;
+}
+.tab_box {
+    padding: 20px;
+}
+.tabcontent #tab01{
+    border: 10px solid #e0b7ab;
+}
+.tabcontent #tab02{
+    border: 10px solid #e0c19f;
+}
+.tabcontent #tab03{
+    border: 10px solid #C6CBA6;
+}
+.tabcontent #tab04{
+    border: 10px solid #8ca387;
+}
+.tabcontent #tab05{
+    border: 10px solid #87a39f;
 }
 
-.traning_wrap .box03::before {
-    content: "반응형";
-    font-size: 18px;
-    line-height: 50px;
-    font-weight: 800;
-    color: var(--mk);
-
-}
-
-.traning_wrap .box03::after {
-    content: "아웃백 스테이크";
-    position: absolute;
-    width: 130px;
-    right: 6.5%;
-    font-size: 17px;
-    line-height: 50px;
-    font-weight: 700;
-    color: var(--mk);
-    background: #677a67;
-    border-radius: 15px;
-}
-
-.traning_wrap .box04::before {
-    content: "반응형";
-    font-size: 18px;
-    line-height: 50px;
-    font-weight: 800;
-    color: var(--mk);
-    background: var(--main06);
-}
-
-.traning_wrap .box04::after {
-    content: "카시아속초";
-    position: absolute;
-    font-size: 17px;
-    line-height: 50px;
-    font-weight: 700;
-    color: var(--mk);
-    background: #596b8d;
-    border-radius: 15px;
-}
-
-.traning_wrap .tt p {
-    font-size: 18px;
-    color: var(--hp);
-}
 
 /* ---------------------------------- */
 
-.traning_wrap .box img {
-    width: 500px;
+ .traning_wrap .img_box img {
+    width: 900px;
     border-radius: 20px;
-
-    margin-bottom: 30px;
 }
 
-.traning_wrap .box img:hover {
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+.traning_wrap .img_box img:hover {
+    
 }
 
 
