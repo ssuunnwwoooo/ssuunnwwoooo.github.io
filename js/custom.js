@@ -76,6 +76,9 @@ const designSlide = new Swiper('.Design_slide', {
     parallax: true,
     roundLengths: true,
     slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination",
+    },
     breakpoints: {
         640: {
             slidesPerView: 2,
@@ -95,10 +98,16 @@ $('.main_Design .arrows .right').on('click', function () {
     designSlide.slideNext();
 });
 
-/* document.addEventListener('click',lightbox);
 
-function lightbox(e) {
-    e.preventDefault();
-    const elem = e.target;
-    const elemId = elem.getAttribute('')
-} */
+$('.main_Design .box').on('click', function () {
+    console.log($(this).index(), $(this).find('.img_box img').attr('src'));
+    let img = $(this).find('.img_box img').attr('src');
+    let close = $('<button class="btn">닫기</button>');
+    let box = $('<div class="b_box">').append(`<img src=${img}>`).append(close);
+    $('body').append(box);
+});
+
+$('body').on('click', '.b_box .btn', function () {
+    console.log($(this));
+    $(this).parent().addClass('on')
+});
