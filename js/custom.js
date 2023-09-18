@@ -17,8 +17,8 @@ const mainslide = new Swiper('.main_slide', {
     },
     pagination: {
         el: ".swiper-pagination",
-        type: "progressbar", 
-      },
+        type: "progressbar",
+    },
 
     slideActiveClass: 'on',
 
@@ -45,14 +45,14 @@ $('.main').fullpage({
 })
 
 
-    $('.tabcontent > div').hide();
-    $('.tabnav a').click(function () {
-      $('.tabcontent > div').hide().filter(this.hash).fadeIn();
-      $('.tabnav a').removeClass('active');
-      $(this).addClass('active');
-      return false;
-    }).filter(':eq(0)').click();
-    
+$('.tabcontent > div').hide();
+$('.tabnav a').click(function () {
+    $('.tabcontent > div').hide().filter(this.hash).fadeIn();
+    $('.tabnav a').removeClass('active');
+    $(this).addClass('active');
+    return false;
+}).filter(':eq(0)').click();
+
 
 $('.menu_icon').on('click', function () {
     $(this).toggleClass('on');
@@ -94,3 +94,11 @@ $('.main_Design .arrows .left').on('click', function () {
 $('.main_Design .arrows .right').on('click', function () {
     designSlide.slideNext();
 });
+
+/* document.addEventListener('click',lightbox);
+
+function lightbox(e) {
+    e.preventDefault();
+    const elem = e.target;
+    const elemId = elem.getAttribute('')
+} */
